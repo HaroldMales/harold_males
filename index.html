@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mecanica Confibles Sobre Ruedas</title>
+
+  <!-- Agrega enlaces a los estilos de Bootstrap -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos3d.css">
+  <link rel="stylesheet" href="DataTables/datatables.min.css">
+</head>
+<body>
+  <!--ICONOS FLOTANTES
+  <div class="floating-icons bg-white p-2 rounded-2">
+    <a title="YouTube" href="#"><i class="fa fa-youtube fa-2x text-danger" aria-hidden="true"></i></a>
+    <a title="WhatsApp" href="#"><i class="fa fa-whatsapp fa-2x text-success" aria-hidden="true"></i></a>
+  </div>
+-->
+
+  <!--SECCION NABVAR-->
+  <nav class="navbar navbar-expand-md fondo fixed-top bg-dark">
+    <div class="container-fluid">
+
+        <!--TÍTULO/LOGO/IMAGEN-->
+        <a class="navbar-brand text-black " style="font-size: 15px;" href="#">
+          <img src="images/logotipo-removebg-preview (1).png" width="50px" style="border: 2px solid white; border-radius: 50%;">
+          <span style="font-family: 'Gothic', sans-serif;">MECANICA CONFIBLE SOBRE RUEDAS</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVAR" aria-controls="navbarVAR" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--OPCIÓNES DEL NAVBAR-->
+        <div class="collapse navbar-collapse" id="navbarVAR">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <!--OPCIÓN EGRESOS-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#fotos">
+                      <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                      Fotos
+                  </a>
+                </li>
+
+                <!--OPCIÓN PROMOCIONES-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#promociones">
+                      <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                      Promociones
+                  </a>
+                </li>
+
+                <!--FOTOS 3D-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#fotos3d">
+                      <i class="fa fa-cube" aria-hidden="true"></i>
+                      FOTOS 3D
+                  </a>
+                </li>
+
+                <!--FORMULARIO-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#formulario">
+                      <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                      Formulario
+                  </a>
+                </li>
+
+                <!--TABLA-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#tabla">
+                      <i class="fa fa-table" aria-hidden="true"></i>
+                      Tabla
+                  </a>
+                </li>
+
+                <!--SWITCH-->
+                <li class="nav-item">
+                  <a class="nav-link" href="#foco" data-bs-toggle="modal" data-bs-target="#focoModal">
+                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    Foco
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!--SECCIÓN CAROUSEL-->
+  <div id="carouselVAR" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ima"></button>
+          <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+          <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+          <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="3" aria-label="Imagen 4"></button>
+      </div>
+      <div class="carousel-inner">
+        
+        <!--IMAGEN 1-->
+          <div class="carousel-item active">
+              <img src="images/fondo7.png" class="d-block w-100" style="height: 100vh;" alt ="">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="text-warning" style="text-shadow: 2px 2px 4px #000;">MECANICA "CONFIABLE SOBRE RUEDAS"</h2>
+                  <h4 style="text-shadow: 10px 5px 5px #000, -5px -5px 5px #000;">Estamos ubicados en Ibarra ,mariano acosta.</h4>
+              </div>
+          </div>
+
+          <!--IMAGEN 2-->
+          <div class="carousel-item">
+            <img src="images/fondo2.png" class="d-block w-100" style="height: 100vh;" alt ="">
+            <div class="carousel-caption d-none d-md-block">
+                  <h2 class="text-warning" style="text-shadow: 2px 2px 4px #000;">OFRECEMOS A LOS CLIENTES:</h2>
+                  <h4 class="text-warning" style="text-shadow: 2px 2px 4px #000;">Lavado de carro,Reparación de partes del carro,Mantenimineto </h4>
+              </div>
+          </div>
+
+          <!--IMAGEN 3-->
+          <div class="carousel-item">
+            <img src="images/fondo3.jpg" class="d-block w-100" style="height: 100vh;" alt ="">
+            <div class="carousel-caption d-none d-md-block">
+                  <h5>ESPECIALIDADES</h5>
+                  <p>Lavado, Reparación, Mantenimineto.</p>
+              </div>
+          </div>
+
+          <!--IMAGEN 4-->
+          <div class="carousel-item">
+            <img src="images/fondo1.png" class="d-block w-100" style="height: 100vh;" alt ="">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>FROMASD E PAGO</h5>
+                <p>En efectivo, Credito, Cuotas o el seguro.</p>
+            </div>
+        </div>
+
+        <!--BOTONES DE NAVAR-->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselVAR" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselVAR" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+      </button>
+  </div>
+
+  <!--OPCIONES DE NAVBAR 2-->
+  <div class="container pantalla-completa" id="egresos">
+    <div class="row">
+        <div class="col-sm-12 col-xl-6">
+            <h1 class="text-danger">BIENVENIDOS AL MODULO DE EGRESOS</h1>
+            <p>En este espacio debe colocar todas las acciones del boton egresos tomando en cuenta que de ser necesario debe colocar un boton de retorno.</p>
+          
+            
+        </div>
+        <div class="col-sm-12 col-xl-6">
+            <h4>SECCION DE DERECHA DE EGRESOS</h4>
+            <p>En esta secciòn ubicada en la parte derecha se debe colocar indicaciones referentes al proceso de egresos mediante botones informativos.</p>
+        </div>
+        <a href="#carouselVAR" class="btn btn-primary">Regresar</a>
+    </div>
+ </div>
+
+  <!--OPCIONES NAVBAR FOTOGRAFIAS-->
+  <div  class="container pantalla-completa" id="fotografias">
+    <div class="row">
+        <!--FOTOGRAFIA UNO-->
+        <div class="col-12 col-sm-6">
+            <div class="image-container">
+                <img src="images/fondo5.png" class="img-fluid rounded-5" alt="">
+                <div class="overlay">
+                    <h3> IMAGEN DEL TALLER POR DENTRO  </h3>
+                    <p class="p-3"> Taller con una vision amplia</p>
+                </div>
+            </div>
+        </div>
+
+        <!--FOTOGRAFIA DOS-->
+        <div class="col-12 col-sm-6">
+            <div class="image-container">
+                <img src="images/fondo6.png" class="img-fluid rounded-5" alt="">
+                <div class="overlay">
+                    <h3> IMAGEN DEl TALLER </h3>
+                    <p class="p-3"> Entrada del taller </p>
+                </div>
+            </div>
+        </div>          
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- ACORDEON UNO-->
+<div class="container" id="promociones" style="height: 100vh;">
+<div  class="accordion"> 
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno" style="margin-top: 200px;">
+            promociones del día
+            </button>
+        </h2>
+        <div id="collapseUno" class="accordion-collapse collapse" data-bs-parent="#promociones">
+            <div class="accordion-body">
+                <strong>Semana de locura.</strong>Lleve dos productos de cualquier marca y el tercero paga la mitad.
+                
+                <!--INCLUSIÓN DE FOTOGRSFIAS-->
+                <div class="container mt-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 1 O FOTOGRAFIA 1-->
+                            <div class="card">
+                                <img src="images/fondo6.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title"> TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografía.</p>
+                                </div>
+                                <div class="card-footer"style="text-align:right;">
+                                    <a data-bs-toggle="modal"data-bs-target="#miVentanaModal" href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 2 O FOTOGRAFIA 2-->
+                            <div class="card">
+                              <img src="images/fondo8.png" class="card-img-top" alt="">
+                              <div class="card-body">
+                                  <h5 class="card-title"> TITULO DE LA FOTOGRAFIA</h5>
+                                  <p class="card-text">Incluir el comentario corto de la fotografía.</p>
+                              </div>
+                              <div class="card-footer"style="text-align:right;">
+                                  <a href="#" class="btn btn-secondary">Ver más</a>
+                              </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 2 O FOTOGRAFIA 2-->
+                            <div class="card">
+                                <img src="images/fondo9.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title"> TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografía.</p>
+                                </div>
+                                <div class="card-footer"style="text-align:right;">
+                                    <a href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-12 col-lg-4 col-sm-6 mt-3">
+                            <!--CARD 3 O FOTOGRAFIA 3-->
+                            <div class="card">
+                                <img src="images/fondo7.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title"> TITULO DE LA FOTOGRAFIA</h5>
+                                    <p class="card-text">Incluir el comentario corto de la fotografía.</p>
+                                </div>
+                                <div class="card-footer"style="text-align:right;">
+                                    <a href="#" class="btn btn-secondary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--ACORDEON DOS-->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos" style="margin-top: 100ph;">
+            Lugar en que aplica
+            </button>
+        </h2>
+        <div id="collapseDos" class="accordion-collapse collapse" data-bs-parent="#promociones">
+            <div class="accordion-body">
+                <strong>Viernes negro.</strong>Desde las 8:00am hasta 9:00pm.
+            </div>
+        </div>
+    </div>
+
+      <!--ACORDEON TRES-->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres" style="margin-top: 100ph;">
+            Lugar en que aplica
+            </button>
+        </h2>
+        <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#promociones">
+            <div class="accordion-body">
+                <strong>Descuento navideño.</strong>Un descuento segun el número de productos que usted adquiera.
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--SECCION FOTOS 3D-->
+  <div class="container-fluid pantalla-completa" id="fotos3d" style="height: 100vh;">
+    <div class="content-all">
+      <div class="content-carousel">
+
+        <figure><div class="texto">MECANICA CONFIANZA SOBRE RUEDAS</div><img class="rounded" src="images/fondo19.jpg" alt=""></figure>
+
+        <figure><div class="texto">FOTOGRAFIA 2</div><img class="rounded" src="images/fondo18.jpg" alt=""></figure>
+
+        <figure><div class="texto">FOTOGRAFIA 3</div><img class="rounded" src="images/fondo17.jpg" alt=""></figure>
+
+        <figure><div class="texto">FOTOGRAFIA 4</div><img class="rounded" src="images/fondo10.png" alt=""></figure>
+        
+        <figure><div class="texto">MECANICA CONFIANZA SOBRE RUEDAS</div><img class="rounded" src="images/fondo19.jpg" alt=""></figure>
+      </div>
+    </div>
+  </div>
+
+  <!--SECCION FORMULARIO-->
+  <div class="container-fluid pantalla-completa bg-secondary" id="formulario">
+    <form action="" method="post">
+      <div class="row p-2">
+        <h2 class="text-center text-white">REGISTRO DE INFORMACIÓN</h2>
+
+        <!--PARTE IZQUIERDA-->
+        <div class="col-12 col-md-6 col-lg-6 bg-white p-5">
+          <div class="input-group mb-3">
+            <label for="nombre" class="input-group-text text-primary"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <strong>NOMBRE:</strong> </label>
+            <input type="text" name="nombre" id="nombre" class="form-control bg-light-blue" placeholder="Ingrese nombres completos" size="60" required>
+          </div>
+
+          <div class="input-group mb-3">
+            <label for="apellido" class="input-group-text text-primary"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <strong>APELLIDO:</strong> </label>
+            <input type="text" name="apellido" id="apellido" class="form-control bg-light-blue" placeholder="Ingrese apellidos completos" size="60" required>
+          </div>
+        </div>
+
+        <!--PARTE DERECHA-->
+        <div class="col-12 col-md-6 col-lg-6 bg-info p-5">
+          <div class="input-group mb-3">
+            <label for="fecha" class="input-group-text text-danger"><strong> Fecha de nacimiento:</strong></label>
+            <input type="date" name="fecha" id="fecha" class="form-control bg-light-blue" required>
+          </div>
+
+          <div class="input-group mb-3">
+            <label for="edad" class="input-group-text text-danger"><strong> Edad:</strong></label>
+            <input type="number" name="edad" id="edad" class="form-control bg-light-blue" readonly>
+          </div>
+
+          <!--GENERO-->
+          <div class="input-group mb-3">
+            <label for="genero" class="input-group-text text-primary"><strong> Género:</strong></label>
+            <select name="genero" id="genero" required>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>     
+          </div>
+ 
+          <!--PROVINCIAS-->
+          <div class="input-group mb-3">
+            <label for="provincia" class="input-group-text text-primary"><strong> Provincia:</strong></label>
+            <select name="provincia" id="provincia" required>
+              <!--javascript provincias-->
+            </select>     
+          </div>          
+
+          <!--CANTONES-->
+          <div class="input-group mb-3">
+            <label for="canton" class="input-group-text text-primary"><strong> Cantón:</strong></label>
+            <select name="canton" id="canton" required>
+              <!--javascript cantones-->
+            </select>     
+          </div> 
+
+        </div>
+
+        <!--BOTONES DEL FORMULARIO-->
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary">
+            <i class="fa fa-save fa-2x"></i>
+            Guardar
+          </button>
+          <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'; ">
+            <i class="fa fa-close fa-2x"></i>
+            Cerrar
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+  <!--SECCION TABLA-->
+  <div class="container-fluid pantalla-completa" id="tabla" style="height: 100vh;">
+    <div class="row">
+      <div class="col-12 col-sm-2 col-xl-2 bg-dark rounded">
+        <h1 class="text-danger text-center">USO DE TABLAS</h1>
+        <p class="text-center text-white">el uso de las tablas es necesario para ponerla infomación en especial para poner informacón importante o necesaria para nosotros o para agrregar cosas o datos</p>
+      </div>
+      <div class="col-12 col-sm-10 col-xl-10 bg-secondary rounded p-2">
+        <div class="table-responsive">
+          <table class="tableres-responsive table-bordered w-100" id="tabla1">
+            <thead>
+              <tr>
+                <th>Nª</th>
+                <th>Cédula</th>
+                <th>Apellidos</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1004536502</td>
+                <td>Agua</td>
+                <td>Heidy</td>
+                <td>El Milagro</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>1751426824</td>
+                <td>Barreno</td>
+                <td>Juan</td>
+                <td>La Florida</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1004869184</td>
+                <td>Cacuango</td>
+                <td>Cintia</td>
+                <td>San Antonio </td>
+                </tr>
+              </tr> 
+              <tr>
+                <td>4</td>
+                <td>1004978969</td>
+                <td>Castillo</td>
+                <td>Patricio</td>
+                <td>Las Palmas</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>1005115389</td>
+                <td>Males</td>
+                <td>Harold</td>
+                <td>La Florida</td>
+              </tr>      
+          </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--SECCION HORARIO-->
+  <div class="container-fluid pantalla-completa" id="tabla" style="height: 100vh;">
+    <div class="row">
+      <div class="col-12 col-sm-2 col-xl-2 bg-dark rounded">
+        <h1 class="text-danger text-center">HORARIOS</h1>
+        <p class="text-center text-white">HORARIOS DE CLASES DE LA SEMANA DE LOS ESTUDIANTES DE SEGUNDO TECNICO "A" CON ESTE HORARIO PODEMOS SABER LAS CLASES O TODAS LAS HORAS DE ACTIVIDAD DE CLASES DE LOS ESTUDIANTES PARA PODER ASISTIR A CLASES</p>
+      </div>
+      <div class="col-12 col-sm-10 col-xl-10 bg-secondary rounded p-2">
+        <div class="table-responsive">
+          <table class="tableres-responsive table-bordered w-100" id="tabla2">
+            <thead>
+              <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7:00-7:40</td>
+                <td>FISICA</td>
+                <td>DISEÑO Y DESARROLLO WEB</td>
+                <td>EDU. PARA LA CIUDADANIA</td>
+                <td>EMPRENDIMINETO</td>
+                <td>MATEMATICA</td>
+              </tr>
+              <tr>
+                <td>7:40-8:20</td>
+                <td>FISICA</td>
+                <td>DISEÑO Y DESARROLLO WEB</td>
+                <td>EDU. PARA LA CIUDADANIA</td>
+                <td>EMPRENDIMIENTO</td>
+                <td>MATEMATICA</td>
+              </tr>
+              <tr>
+                <td>8:20-9:00</td>
+                <td>LENGUA Y LITERATURA</td>
+                <td>DISEÑO Y DESARROLO WEB</td>
+                <td>ACOMPAÑAMIENTO AULA</td>
+                <td>SISTEMAS OPERATIVOS</td>
+                <td>SOPORTE TECNICO</td>
+                </tr>
+              </tr> 
+              <tr>
+                <td>9:00-9:40</td>
+                <td>LENGUA Y LITERATURA</td>
+                <td>HISTORIA</td>
+                <td>SISTEMAS OPERATIVOS</td>
+                <td>SISTEMAS OPERATIVOS</td>
+                <td>SOPORTE TECNICO</td>
+              </tr>
+              <tr>
+                <td>9:40-10:20</td>
+                <td>PROGRAMACION</td>
+                <td>HISTORIA</td>
+                <td>MATEMATICAS</td>
+                <td>FILOSOFIA</td>
+                <td>INGLES</td>
+              </tr> 
+              <tr>
+                <td>10:20-11:00</td>
+                <td>RECREO</td>
+                <td>RECREO</td>
+                <td>RECREO</td>
+                <td>RECREO</td>
+                <td>RECREO</td>
+              </tr>               
+              <tr>
+                <td>11:00-11:40</td>
+                <td>PROGRAMACION</td>
+                <td>LENGUA Y LITERATURA</td>
+                <td>ECA</td>
+                <td>FILOSOFIA</td>
+                <td>INGLES</td>
+              </tr> 
+              <tr>
+                <td>11:40-12:20</td>
+                <td>QUIMICA</td>
+                <td>EDUCACION FISICA</td>
+                <td>ECA</td>
+                <td>PROGRAMACION</td>
+                <td>BIOLOGIA</td>
+              </tr>
+              <tr>
+                <td>12:20-13:00</td>
+                <td>QUIMICA</td>
+                <td>EDUCACION FISICA</td>
+                <td>INGLES</td>
+                <td>PROGRAMACION</td>
+                <td>BIOLOGIA</td>
+              </tr>                              
+          </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--MI VENTANA MODAL 1-->
+  <div class="modal fade" id="miVentanaModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--ENCABEZADO/HEAD MODAL-->
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="ModalLabel">Cymbidium tracyanum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <!--CUERPO/BODY MODAL-->
+        <div class="modal-body text-dark">
+          <p><i class="fa fa-check fa-3x" aria-hidden="true"></i>Su origen se remota a la antigua Grecia.</p>
+          <p><i class="fa fa-check fa-3x" aria-hidden="true"></i>A América llego en el Siglo XIV.</p>
+        </div>
+        <!--PIE/FOOTER MODAL--> 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--SEGUNDA VENTANA MODAL FOCO-->
+  <div class="modal fade" id="focoModal" tabindex="-1" aria-labelledby="focoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--ENCABEZADO-->
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="focoModalLabel">Interruptor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!--CUERPO-->
+        <div class="modal-body">
+          <div class="digital-switch" onclick="toggleSwitch(this)">
+            <i class="fa fa-lightbulb-o text-dark"></i>
+            <span class="text text-dark text-center">Apagado</span>
+          </div>
+          <br>
+          <div class="text-center text-dark" id="foco"></div>
+        </div>
+        <!--PIE-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--LIBRERIAS JS-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/provincias-cantones.js"></script>
+  <script src="js/edad.js"></script>
+  <!--LIBRERIAS JS PARA TABLAS-->
+  <script src="DataTables/jquery-3.7.1.min.js"></script>
+  <script src="DataTables/datatables.min.js"></script>
+
+  <!--PROPIEDADSS DE DATATABLE Y JQUERY-->
+  <script>
+    $(document).ready(function(){
+      $('#tabla1').DataTable({
+        scrollY: '150px',
+        scrollX: true,
+        scrollCollapse: true,
+        paging: true,
+        bFilter: true,
+        bInfo: false,
+        ordering: true,
+        language:{
+          info: 'Mostrando _START_ a _ END_ de _TOTAL_ Entradas',
+          infoFiltire: '(Filtrando de _MAX_ total entradas)',
+          lengthMenu: 'Visualizar _MENU_ registros',
+          search: 'Buscar',
+          paginate:{
+            first: 'Primero',
+            last: 'Ultimo',
+            next: 'Siguiente',
+            previous: 'Anterior'
+          }
+        }
+      });
+    });
+  </script>
+
+  <!--PROPIEDADES DE HORARIO-->
+  <script>
+    $(document).ready(function(){
+      $('#tabla2').DataTable({
+        scrollY: '150px',
+        scrollX: true,
+        scrollCollapse: true,
+        paging: true,
+        bFilter: true,
+        bInfo: false,
+        ordering: true,
+        language:{
+          info: 'Mostrando _START_ a _ END_ de _TOTAL_ Entradas',
+          infoFiltire: '(Filtrando de _MAX_ total entradas)',
+          lengthMenu: 'Visualizar _MENU_ registros',
+          search: 'Buscar',
+          paginate:{
+            first: 'Primero',
+            last: 'Ultimo',
+            next: 'Siguiente',
+            previous: 'Anterior'
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
